@@ -63,3 +63,22 @@ console.log(`My ID is: ${myId}`);
 let someNumber: number = 123;
 let convertedString: string = someNumber as any as string;
 console.log(`Converted string: ${convertedString}`);
+
+// Unknown
+let unknownValue: unknown = 4;
+console.log(`Unknown value: ${unknownValue}`);
+
+// Unknown vs. any
+let anyValue2: any = "hello";
+let unknownValue2: unknown = "hello";
+
+// Keyword `any`: No type checking - dangerous!
+console.log(anyValue2.toUpperCase()); // Works
+console.log(anyValue2.length);        // Works
+console.log(anyValue2 * 2);           // Works (but makes no sense!) "NaN"
+//anyValue2.foo.bar.baz;                // No error, but will crash at runtime
+
+// Keyword `unknown`: Type checking - safer!
+// console.log(unknownValue.toUpperCase()); // ❌ Error: Object is of type 'unknown'
+// console.log(unknownValue.length);        // ❌ Error: Object is of type 'unknown'
+// console.log(unknownValue * 2);           // ❌ Error: Object is of type 'unknown'
