@@ -1,5 +1,5 @@
 
-import { ProxyService } from './proxy.service';
+import { ProxyService } from '../../src/proxy/proxy.service';
 import { Effect } from 'effect';
 
 describe('ProxyService', () => {
