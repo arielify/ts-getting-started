@@ -27,6 +27,11 @@
     "paths": {
       "@/*": ["src/*"],
       "@learning/*": ["learning/*"]
-    }
+    },
+    "plugins": [
+      {
+        "name": "@effect/language-service"
+      }
+    ]
   }
 }
