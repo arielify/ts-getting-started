@@ -1,3 +1,7 @@
+/**
+ * @description Install language service for IDE
+ * @file Effect syntax highlighting in IDE
+ */
 
 // ```
 // npm install @effect/language-service --save-dev
@@ -16,4 +20,4 @@
 import { Effect } from "effect";
 
 Effect.log("Hello world!")
-// ^- should be run or assigned to a variable!
+// ^- effect: Effect must be yielded or assigned to a variable. effect(floatingEffect)

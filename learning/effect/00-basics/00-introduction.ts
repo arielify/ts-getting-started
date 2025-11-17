@@ -1,10 +1,15 @@
-
-// In “typical” TypeScript, without Effect, we write code that assumes
-// that a function is either successful or throws an exception. Based on the types,
-// we have no idea that this function can throw an exception. We can only find out by reading the code.
 // noinspection GrazieInspection
 
-const divide1 = (a: number, b: number): number => {
+/**
+ * @description The concept of Effect compared to traditional TypeScript
+ * @file The Effect philosophy
+ */
+
+// In "typical" TypeScript, without Effect, we write code that assumes
+// that a function is either successful or throws an exception. Based on the types,
+// we have no idea that this function can throw an exception. We can only find out
+// by reading the code.
+const divideTraditional = (a: number, b: number): number => {
     if (b === 0) {
         throw new Error("Cannot divide by zero");
     }
@@ -15,7 +20,7 @@ const divide1 = (a: number, b: number): number => {
 // to track errors and context, not only success values as shown in the divide example above.
 import { Effect, Console } from "effect";
 
-const divide2 = (
+const divideEffect = (
     a: number,
     b: number
 ): Effect.Effect<number, Error, never> =>
@@ -31,5 +36,6 @@ const divide2 = (
 //          ▼       ▼      ▼
 // Effect<number, Error, never>
 
+// Hello, World!
 const program = Console.log("Hello, World!");
 Effect.runSync(program);
