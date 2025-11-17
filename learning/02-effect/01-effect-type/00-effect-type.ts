@@ -3,6 +3,7 @@
 /**
  * The Effect type:
  * https://effect.website/docs/getting-started/the-effect-type/
+ * https://effect.website/docs/getting-started/creating-effects/
  *
  * ```
  *          ┌─── Represents the success type

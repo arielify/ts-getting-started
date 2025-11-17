@@ -1,5 +1,6 @@
 /**
- * Constructor `Effect.succeed` example.
+ * Constructor `Effect.succeed` example:
+ * https://effect.website/docs/getting-started/creating-effects/
  */
 
 import { Effect } from "effect";
@@ -32,7 +33,7 @@ for (const userId of [1, 2, 3]) {
     // Effect<User, Error, never>
     const program = getUser(userId);
     try {
-        let user = Effect.runSync(program);
+        let user = Effect.runSync(program); // result or FiberFailure "defect"
         console.log(user);
     } catch (error) {
         console.error("Unexpected error:", error)
