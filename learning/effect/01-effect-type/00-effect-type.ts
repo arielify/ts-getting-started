@@ -1,8 +1,3 @@
-/**
- * @description Effect type syntax and usage
- * @file Effect type overview
- */
-
 //
 //          ┌─── Represents the success type
 //          │        ┌─── Represents the error type
