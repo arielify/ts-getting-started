@@ -1,6 +1,6 @@
 /**
  * Constructor `Effect.fail` example:
- * https://effect.website/docs/getting-started/creating-effects/
+ * https://effect.website/docs/getting-started/creating-effects/#fail
  */
 
 import {Data, Effect} from "effect";

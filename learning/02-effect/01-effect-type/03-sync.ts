@@ -1,5 +1,6 @@
 /**
- * Constructor `Effect.sync` example where the error will be a "defect".
+ * Constructor `Effect.sync` example where the error will be a "defect":
+ * https://effect.website/docs/getting-started/creating-effects/#sync
  */
 
 import {Effect} from "effect";

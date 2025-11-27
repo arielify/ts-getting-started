@@ -1,6 +1,6 @@
 /**
  * Constructor `Effect.succeed` example:
- * https://effect.website/docs/getting-started/creating-effects/
+ * https://effect.website/docs/getting-started/creating-effects/#succeed
  */
 
 import { Effect } from "effect";
